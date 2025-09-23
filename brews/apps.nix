@@ -4,14 +4,10 @@
   brews.apps = {
     casks = [
       "1password"
-      "cheatsheet"
-      "hiddenbar"
       "jetbrains-toolbox"
       "postman"
       "shottr" # screenshot tool
       "slack"
-      "vlc"
-      "mitmproxy"
     ];
     brews = [
       "gh" # GitHub CLI
