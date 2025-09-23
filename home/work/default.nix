@@ -23,14 +23,14 @@ in
     nugetSources = {
       "ep-github" = {
         url = "https://nuget.pkg.github.com/EducationPerfect/index.json";
-        userName = "%EP_NUGET_SOURCE_USER%";
-        password = "%EP_NUGET_SOURCE_PASS%";
+        userName = "$EP_NUGET_SOURCE_USER";
+        password = "$EP_NUGET_SOURCE_PASS";
       };
     };
   };
 
   secureEnv.onePassword = {
-    enable = false; # temporary
+    enable = true; # temporary
     sessionVariables = {
       EP_NUGET_SOURCE_PASS = {
         account = "educationperfect.1password.com";
@@ -48,13 +48,13 @@ in
         required = true; # Critical for work development
       };
 
-      FUSIONAUTH_LICENCE = {
-        account = "educationperfect.1password.com";
-        vault = "Dev - Shared DevOps";
-        item = "FusionAuth Licences";
-        field = "Non-Production";
-        required = false; # Optional for local dev
-      };
+#  Note:Ersin I don't need this or have access to it
+      # FUSIONAUTH_LICENCE = {
+      #   account = "educationperfect.1password.com";
+      #   vault = "Dev - Shared DevOps";
+      #   item = "FusionAuth Licences";
+      #   field = "Non-Production";
+      # };
 
       EP_NPM_TOKEN = {
         account = "educationperfect.1password.com";

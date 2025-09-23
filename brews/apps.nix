@@ -55,7 +55,7 @@
   };
 
   brews.rancher = {
-    enable = true;
+    enable = false;
     hostResolver = false;
   };
 
