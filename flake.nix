@@ -36,20 +36,20 @@
     
     # User configuration - define your user details here
     user = {
-      name        = "alexey";
-      fullName    = "Alexey Raga";
-      email       = "alexey.raga@gmail.com";  # Replace with your actual email
-      home        = "/Users/alexey";
+      name        = "ersin";
+      fullName    = "Ersin Buckley";
+      email       = "ersin.buckley@educationperfect.com";  # Replace with your actual email
+      home        = "/Users/ersin";
       shell       = "zsh";
-      hostname    = "Alexeys-MacBook-Pro";  # System hostname for nix-darwin
+      hostname    = "EP-FRQL7G176X";  # System hostname for nix-darwin
       
       # Git-specific configurations
-      githubUser  = "AlexeyRaga";
+      githubUser  = "ebuckley";
       gitWorkspaces = {
         "src/ep" = {
           user = {
-            email = "alexey.raga@educationperfect.com";
-            name = "AlexeyRaga";
+            email = "ersin.buckley@educationperfect.com";
+            name = "Ersin Buckley";
           };
           core = { autocrlf = "input"; };
         };
