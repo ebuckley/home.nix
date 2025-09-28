@@ -30,7 +30,7 @@ in
   };
 
   secureEnv.onePassword = {
-    enable = true; # temporary
+    enable = true;
     sessionVariables = {
       EP_NUGET_SOURCE_PASS = {
         account = "educationperfect.1password.com";

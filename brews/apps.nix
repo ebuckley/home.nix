@@ -11,6 +11,7 @@
     ];
     brews = [
       "gh" # GitHub CLI
+      "docker"
     ];
   };
 
