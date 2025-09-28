@@ -18,7 +18,7 @@
   let
     # Import modules lib for overlay discovery
     modules = import ./lib/modules.nix { lib = nixpkgs.lib; };
-    
+
     # Create a special overlay that adds flake inputs to pkgs
     inputsOverlay = final: prev: {
       inputs = inputs;
@@ -67,12 +67,15 @@
     darwinConfigurations.${user.hostname} = nix-darwin.lib.darwinSystem {
       inherit pkgs;
       specialArgs = { inherit inputs user; };
+
+
       modules = [
         ./darwin-configuration.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "backup";
           home-manager.users.${user.name} = ./home;
           home-manager.extraSpecialArgs = { inherit inputs user; };
         }

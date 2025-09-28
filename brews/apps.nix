@@ -8,6 +8,7 @@
       "postman"
       "shottr" # screenshot tool
       "slack"
+      "ghostty"
     ];
     brews = [
       "gh" # GitHub CLI
