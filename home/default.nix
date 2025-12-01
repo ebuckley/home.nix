@@ -64,6 +64,9 @@ in
       enableKeyMapping = true;
       remapCapsLockToControl = true;
     };
+    sessionVariables = {
+      EP_NUGET_SOURCE_URL = "https://nuget.pkg.github.com/EducationPerfect/index.json";
+    }
   };
 
   fonts.fontconfig.enable = true;
